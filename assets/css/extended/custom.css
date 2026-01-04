@@ -1,40 +1,69 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&display=swap");
 
-/* Base */
+/* =========================================================
+   PaperMod theme variable overrides (THIS is the key part)
+   ========================================================= */
+
+:root {
+    --theme: #171719; /* page background */
+    --entry: #171719; /* cards / post containers */
+    --primary: #d5d6d2; /* main text */
+    --secondary: #b8b9b5; /* muted text */
+    --content: #d5d6d2; /* article content text */
+    --hljs-bg: #171719; /* code blocks, if any */
+}
+
+.dark {
+    --theme: #171719;
+    --entry: #171719;
+}
+
+/* =========================================================
+   Base typography
+   ========================================================= */
+
 body {
     font-family: "Source Serif 4", Georgia, serif;
     font-size: 18px;
     line-height: 1.75;
-    background-color: #171719;
-    color: #d5d6d2;
+    color: var(--content);
 }
 
-/* Headings */
+/* =========================================================
+   Headings
+   ========================================================= */
+
 h1,
 h2,
 h3,
-h4 {
+h4,
+h5,
+h6 {
     font-family: "Source Serif 4", Georgia, serif;
     font-weight: 300;
     letter-spacing: -0.01em;
 }
 
-/* Title emphasis */
 .post-title {
     font-weight: 300;
 }
 
-/* Essay width */
+/* =========================================================
+   Layout tuning for essays
+   ========================================================= */
+
 .post-content {
     max-width: 760px;
 }
 
-/* Paragraph rhythm */
 .post-content p {
     margin-bottom: 1.4em;
 }
 
-/* Subtle link styling */
+/* =========================================================
+   Links
+   ========================================================= */
+
 a {
     color: #c6d6df;
     text-decoration: none;
@@ -44,7 +73,10 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Homepage intro tightening */
+/* =========================================================
+   Homepage intro
+   ========================================================= */
+
 .home-info .entry-content {
     max-width: 560px;
 }
