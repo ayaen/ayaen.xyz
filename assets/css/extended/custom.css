@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&display=swap");
+
+/* Base */
+body {
+    font-family: "Source Serif 4", Georgia, serif;
+    font-size: 18px;
+    line-height: 1.75;
+    background-color: #1e1e1c;
+    color: #e6e6e2;
+}
+
+/* Headings */
+h1,
+h2,
+h3,
+h4 {
+    font-family: "Source Serif 4", Georgia, serif;
+    font-weight: 300;
+    letter-spacing: -0.01em;
+}
+
+/* Title emphasis */
+.post-title {
+    font-weight: 300;
+}
+
+/* Essay width */
+.post-content {
+    max-width: 760px;
+}
+
+/* Paragraph rhythm */
+.post-content p {
+    margin-bottom: 1.4em;
+}
+
+/* Subtle link styling */
+a {
+    color: #c6d6df;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Homepage intro tightening */
+.home-info .entry-content {
+    max-width: 560px;
+}
