@@ -8,6 +8,7 @@ enableRobotsTXT = true
   env = "development"
   description = "Writing on media, storytelling, and how OTT platforms shape viewing habits."
   defaultTheme = "light"
+  mainSections = ["posts"]
   disableThemeToggle = true
   ShowReadingTime = false
   ShowShareButtons = false
@@ -15,8 +16,13 @@ enableRobotsTXT = true
   ShowAuthor = false
   ShowBreadCrumbs = false
   disableSpecial1stPost = true
-  customCSS = ["css/custom.css"]
+  #customCSS = ["css/custom.css"]
 
   [params.homeInfoParams]
     Title = "Writing"
     Content = "Essays on media, storytelling, and how digital platforms shape viewing habits."
+
+[outputs]
+  home = ["HTML"]
+  section = ["HTML"]
+  page = ["HTML"]
