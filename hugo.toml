@@ -7,7 +7,10 @@ enableRobotsTXT = true
 [params]
   env = "development"
   description = "Writing on media, storytelling, and how OTT platforms shape viewing habits."
-  defaultTheme = "light"
+  [params.label]
+    text = "Apfelstrudel"
+    fancy = "<span class='apfel-a'>A</span>pfelstrudel"
+  defaultTheme = "dark"
   mainSections = ["posts"]
   disableThemeToggle = true
   ShowReadingTime = false
@@ -26,3 +29,8 @@ enableRobotsTXT = true
   home = ["HTML"]
   section = ["HTML"]
   page = ["HTML"]
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

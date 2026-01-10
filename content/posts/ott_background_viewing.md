@@ -1,11 +1,10 @@
 ---
 title: "Why Many OTT Shows Are Designed For Background Viewing"  
 date: 2026-01-10
-summary: "Watching a show while washing dishes or preparing a meal is not unheard of."
+summary: "Watching a show while washing dishes or preparing a meal is not unheard of"
 ---
 
-Watching a show while washing dishes or preparing a meal is not unheard of. <!--more--> 
-Yet we hear complaints about reduced attention spans, dying art forms, undemanding writing—a whole litany of them. This is a phenomenon that has been around almost since the first time we had consumer radio, and television after that. All that has changed is that the OTT platforms have figured out how to thrive on this behavior.
+Watching a show while washing dishes or preparing a meal is not unheard of. Yet we hear complaints about reduced attention spans, dying art forms, undemanding writing—a whole litany of them. This is a phenomenon that has been around almost since the first time we had consumer radio, and television after that. All that has changed is that the OTT platforms have figured out how to thrive on this behavior.
 
 ## The Phenomenon
 Television Serials are a staple entertainment in Indian households. There is an in-joke about dramatic zoom sequences, stitching reactions of characters occupying a scene with hysterical sounds and effects used repeatedly to anchor key confrontations, conflicts and climaxes. Those who are not the core demographic of these shows find this absurd, even mildly funny. But the confident use of shock sequences and reaction shots shows commitment to a specific audience—homemakers, security guards, night-shift workers in many kinds of facilities. Workers faced with significant downtime who have to be present regardless of volume of work—quickly become ready consumers of these shows.   
