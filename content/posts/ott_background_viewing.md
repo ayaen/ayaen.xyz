@@ -1,6 +1,7 @@
-# Why Many OTT Shows Are Designed For Background Viewing
+# Why Many OTT Shows Are Designed For Background Viewing  
 
-Watching a show while washing dishes or preparing a meal is not unheard of. Yet we hear complaints about reduced attention spans, dying art forms, undemanding writing—a whole litany of them. This is a phenomenon that has been around almost since the first time we had consumer radio, and television after that. All that has changed is that the OTT platforms have figured out how to thrive on this behavior.
+Watching a show while washing dishes or preparing a meal is not unheard of. <!--more--> 
+Yet we hear complaints about reduced attention spans, dying art forms, undemanding writing—a whole litany of them. This is a phenomenon that has been around almost since the first time we had consumer radio, and television after that. All that has changed is that the OTT platforms have figured out how to thrive on this behavior.
 
 ## The Phenomenon
 Television Serials are a staple entertainment in Indian households. There is an in-joke about dramatic zoom sequences, stitching reactions of characters occupying a scene with hysterical sounds and effects used repeatedly to anchor key confrontations, conflicts and climaxes. Those who are not the core demographic of these shows find this absurd, even mildly funny. But the confident use of shock sequences and reaction shots shows commitment to a specific audience—homemakers, security guards, night-shift workers in many kinds of facilities. Workers faced with significant downtime who have to be present regardless of volume of work—quickly become ready consumers of these shows.   
@@ -39,4 +40,4 @@ It becomes clear with how people interact with OTT platforms, that people have n
 Similarly, those appreciative of platform features enabling binge-watching know what they are doing. Where we stand morally about these things is subjective. We are not free of judgment and we are not free of judging.
 
 Finally, back to shows that are designed for "background viewing":
-A helpful analogy to understand this is—one likes familiar or even milder, patterns, iconography and colors when picking out upholstery or pajamas. The stylish, edgy, tastefully chaotic, is reserved for holidays and parties. 
+A helpful analogy to understand this is—one likes familiar or even milder, patterns, iconography and colors when picking out upholstery or pajamas. The stylish, edgy, tastefully chaotic, is reserved for holidays and parties.
