@@ -455,3 +455,20 @@ html[data-theme="dark"] body.list::before {
 .image-credit a:hover {
     opacity: 1;
 }
+
+/* Landing page only */
+.home body::before {
+    opacity: 0.35; /* lower than articles */
+    background-position: top right;
+    mask-image: linear-gradient(
+        to left,
+        rgba(0, 0, 0, 1) 0%,
+        rgba(0, 0, 0, 0.6) 35%,
+        rgba(0, 0, 0, 0.2) 55%,
+        rgba(0, 0, 0, 0) 70%
+    );
+}
+
+.home .home-info {
+    margin-top: -2rem;
+}

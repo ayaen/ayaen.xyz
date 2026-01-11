@@ -12,15 +12,14 @@ enableRobotsTXT = true
     fancy = "<span class='apfel-a'>A</span>pfelstrudel"
   defaultTheme = "dark"
   mainSections = ["posts"]
-  disableThemeToggle = true
-  ShowReadingTime = false
+  disableThemeToggle = false
   ShowShareButtons = false
-  ShowWordCount = false
+  ShowWordCount = true
   ShowAuthor = false
   ShowBreadCrumbs = false
   disableSpecial1stPost = true
   favicon = "favicon.ico"
-  #customCSS = ["css/custom.css"]
+  ShowReadingTime = true
 
   [params.homeInfoParams]
     Title = "Writing"
