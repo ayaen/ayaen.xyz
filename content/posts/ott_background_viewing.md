@@ -4,9 +4,17 @@ date: 2026-01-10
 summary: "Watching a show while washing dishes or preparing a meal is not unheard of"
 ---
 
+
+{{< ambient-image
+      src="/images/ajeet-mestry-UBhpOIHnazM-unsplash.jpg"
+      top="0.5rem"
+>}}
+
 Watching a show while washing dishes or preparing a meal is not unheard of. Yet we hear complaints about reduced attention spans, dying art forms, undemanding writing—a whole litany of them. This is a phenomenon that has been around almost since the first time we had consumer radio, and television after that. All that has changed is that the OTT platforms have figured out how to thrive on this behavior.
 
 ## The Phenomenon
+
+
 Television Serials are a staple entertainment in Indian households. There is an in-joke about dramatic zoom sequences, stitching reactions of characters occupying a scene with hysterical sounds and effects used repeatedly to anchor key confrontations, conflicts and climaxes. Those who are not the core demographic of these shows find this absurd, even mildly funny. But the confident use of shock sequences and reaction shots shows commitment to a specific audience—homemakers, security guards, night-shift workers in many kinds of facilities. Workers faced with significant downtime who have to be present regardless of volume of work—quickly become ready consumers of these shows.   
 
 Periods of cognitive lull, brought about by engaging in routine tasks for long stretches create space for shows one can watch without committing attention. Characters cut from familiar archetypes, story arcs faithfully following templates, are necessary tropes to engage attention while not veering into the territory of utter novelty. It borders on snobbery to dismiss this audience as "not ready for subtler story-telling", or pin it on reduced attention spans. Characterizing shows as purely commercially motivated and creatively stilted fails to recognize the larger context which has enabled this. Art has to be compared with the medium and audience held constant.  

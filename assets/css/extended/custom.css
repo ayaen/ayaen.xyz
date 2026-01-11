@@ -34,37 +34,6 @@
     mix-blend-mode: multiply;
 }
 
-/*/* =========================================================
-   Color system (PaperMod overrides)
-   ========================================================= */
-
-html[data-theme="dark"] {
-    --theme: #0b0c0e;
-    --entry: #111216;
-
-    --primary: #d2d2cd;
-    --content: #c4c4bf;
-    --secondary: #9a9a95;
-    --tertiary: #7b7b76;
-
-    --accent: #9fb2bf;
-    --accent-red: #c21f1f;
-
-    --border-subtle: rgba(255, 255, 255, 0.04);
-    --hljs-bg: #0b0c0e;
-}
-
-/* ===== PaperMod dark mode override (final) ===== */
-html[data-theme="dark"] {
-    --theme: #141516; /* page background */
-    --code-bg: #141516; /* list & home background */
-    --entry: #1a1b1d; /* cards */
-    --content: #cfcfc9; /* body text */
-    --primary: #d8d8d2; /* headings */
-    --secondary: #a9aaa4; /* subtitles, meta */
-    --tertiary: #7f807b; /* footer/meta faint */
-}
-
 /* =========================================================
    Base typography
    ========================================================= */
@@ -298,42 +267,6 @@ a .apfel-a {
 }
 
 /* =========================================================
-   Calm Dark Mode — stable override
-   ========================================================= */
-
-html[data-theme="dark"] {
-    /* Backgrounds */
-    --theme: #0f1011; /* near-black, not charcoal */
-    --entry: #131416;
-
-    /* Text */
-    --primary: #d2d2cf; /* main text, softer */
-    --content: #c9c9c6; /* paragraph text */
-    --secondary: #9a9a96; /* muted text */
-    --tertiary: #7f7f7a; /* meta/footer */
-
-    /* Accents */
-    --accent: #9fb3bf; /* links, desaturated */
-    --accent-red: #c21f1f; /* your red — unchanged */
-
-    /* Borders / misc */
-    --border-subtle: rgba(255, 255, 255, 0.06);
-    --hljs-bg: #0f1011;
-}
-
-/* Headings slightly calmer in dark */
-html[data-theme="dark"] h1,
-html[data-theme="dark"] h2,
-html[data-theme="dark"] h3 {
-    color: #d6d6d2;
-}
-
-/* Reduce perceived glare */
-html[data-theme="dark"] body {
-    text-rendering: optimizeLegibility;
-}
-
-/* =========================================================
    FINAL Dark Mode Override — PaperMod-safe
    ========================================================= */
 
@@ -363,4 +296,54 @@ body[data-theme="dark"] {
     --secondary: #8a8a8a; /* metadata */
     --tertiary: #6e6e6e; /* muted */
     --hljs-bg: #1b1c1e; /* code blocks */
+}
+
+/* =========================================================
+   Ambient margin image (editorial, non-intrusive)
+   ========================================================= */
+
+/* Ambient article image – viewport anchored */
+html[data-theme="dark"] body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 60vw;
+    height: 100vh;
+
+    background-image: url("/images/ajeet-mestry-UBhpOIHnazM-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top right;
+
+    /* brighter image, controlled by mask instead of opacity */
+    opacity: 0.45;
+
+    /* aggressive fade towards text */
+    -webkit-mask-image: linear-gradient(
+        to left,
+        rgba(0, 0, 0, 1) 0%,
+        rgba(0, 0, 0, 1) 26%,
+        rgba(0, 0, 0, 0.6) 40%,
+        rgba(0, 0, 0, 0.15) 55%,
+        rgba(0, 0, 0, 0) 70%
+    );
+    mask-image: linear-gradient(
+        to left,
+        rgba(0, 0, 0, 1) 0%,
+        rgba(0, 0, 0, 1) 25%,
+        rgba(0, 0, 0, 0.6) 40%,
+        rgba(0, 0, 0, 0.15) 55%,
+        rgba(0, 0, 0, 0) 70%
+    );
+
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* Let ambient image bleed through article */
+.main {
+    position: relative;
+    z-index: 1;
+    background: transparent !important;
 }
