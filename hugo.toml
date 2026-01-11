@@ -19,6 +19,7 @@ enableRobotsTXT = true
   ShowAuthor = false
   ShowBreadCrumbs = false
   disableSpecial1stPost = true
+  favicon = "favicon.ico"
   #customCSS = ["css/custom.css"]
 
   [params.homeInfoParams]
