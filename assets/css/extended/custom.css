@@ -238,15 +238,6 @@ a .apfel-a {
     margin-right: auto;
 }
 
-.theme-toggle {
-    margin-left: 1rem;
-    opacity: 0.6;
-}
-
-.theme-toggle:hover {
-    opacity: 1;
-}
-
 /* =========================================================
    FINAL Dark Mode Override — PaperMod-safe
    ========================================================= */
