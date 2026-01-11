@@ -40,7 +40,6 @@
         "anchored_headings.html" .Content -}} {{- else }}{{ .Content }}{{ end }}
     </div>
     {{- end }}
-
     <footer class="post-footer">
         {{- $tags := .Language.Params.Taxonomies.tag | default "tags" }}
         <ul class="post-tags">
@@ -57,4 +56,23 @@
     {{- if (.Param "comments") }} {{- partial "comments.html" . }} {{- end }}
 </article>
 
-{{- end }}{{/* end main */}}
+{{ with .Params.imageCredit }}
+<footer class="image-credit">
+    Photo by
+    <a
+        href="{{ .profile }}?utm_source=ayaen.xyz&utm_medium=referral"
+        target="_blank"
+        rel="noopener"
+    >
+        {{ .name }}
+    </a>
+    on
+    <a
+        href="{{ .photo }}?utm_source=ayaen.xyz&utm_medium=referral"
+        target="_blank"
+        rel="noopener"
+    >
+        Unsplash
+    </a>
+</footer>
+{{ end }} {{- end }}{{/* end main */}}

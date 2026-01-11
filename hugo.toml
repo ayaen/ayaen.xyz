@@ -26,6 +26,11 @@ enableRobotsTXT = true
     Title = "Writing"
     Content = "Writing as meandering as the mind that thought up apples in pastry"
 
+  [params.landingImageCredit]
+    name = "Levart_Photographer"
+    profile = "https://unsplash.com/@siva_photography"
+    photo = "https://unsplash.com/photos/a-close-up-of-two-apples-on-a-table-WUd8XKFIotY"
+
 [outputs]
   home = ["HTML"]
   section = ["HTML"]
