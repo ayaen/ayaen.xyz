@@ -6,9 +6,10 @@
 */
 @font-face {
     font-family: "Goudy Lombardic";
-    src: url("/fonts/goudy-lombardic.otf") format("truetype");
+    src: url("/fonts/goudy-lombardic.woff2") format("woff2");
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 .post-content p:first-of-type::first-letter {
@@ -19,7 +20,7 @@
     margin-right: 0.22em;
     margin-top: 0.18em;
     font-weight: normal;
-    color: #f94147;
+    color: #d04147;
 }
 
 .apfel-a {
@@ -27,7 +28,7 @@
     font-size: 1.2em;
     margin-right: 0.05em;
     vertical-align: 0.05em;
-    color: #f94147;
+    color: #d04147;
 }
 
 .post-content p:first-of-type::first-letter {
@@ -247,29 +248,11 @@ a .apfel-a {
 }
 
 /* =========================================================
-   Light mode – restrained, bookish, low-contrast
-   ========================================================= */
-
-:root[data-theme="light"] {
-    --theme: #f4f2ee; /* warm paper, not white */
-    --entry: #ffffff;
-
-    --primary: #2b2b2b; /* main headings */
-    --content: #333333; /* body text */
-    --secondary: #666666; /* muted text */
-    --tertiary: #888888;
-
-    --accent: #3a5f7a; /* calm blue, not loud */
-    --accent-red: #c91414; /* keep your red consistent */
-
-    --border-subtle: rgba(0, 0, 0, 0.08);
-    --hljs-bg: #f0eee9;
-}
-
-/* =========================================================
    FINAL Dark Mode Override — PaperMod-safe
    ========================================================= */
-
+html[data-theme="light"] {
+    display: none !important;
+}
 body.dark,
 body[data-theme="dark"] {
     --theme: #0d0e10;
@@ -311,7 +294,7 @@ html[data-theme="dark"] body.list::before {
     width: 60vw;
     height: 100vh;
 
-    background-image: url("/images/levart_photographer-WUd8XKFIotY-unsplash.jpg");
+    background-image: url("/images/levart_photographer-WUd8XKFIotY-unsplash.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top right;
@@ -471,4 +454,15 @@ html[data-theme="dark"] body.list::before {
 
 .home .home-info {
     margin-top: -2rem;
+}
+
+/* Ambient image base state: hidden */
+html[data-theme="dark"] body::before {
+    opacity: 0;
+    background-color: #0e0e0e; /* fallback */
+}
+
+/* Reveal ambient image only when ready */
+html[data-theme="dark"].ambient-ready body::before {
+    opacity: 0.45;
 }

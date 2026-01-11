@@ -12,7 +12,7 @@ enableRobotsTXT = true
     fancy = "<span class='apfel-a'>A</span>pfelstrudel"
   defaultTheme = "dark"
   mainSections = ["posts"]
-  disableThemeToggle = false
+  disableThemeToggle = true
   ShowShareButtons = false
   ShowWordCount = true
   ShowAuthor = false
@@ -25,6 +25,7 @@ enableRobotsTXT = true
     Title = "Writing"
     Content = "Writing as meandering as the mind that thought up apples in pastry"
 
+  landingAmbientImage = "/images/levart_photographer-WUd8XKFIotY-unsplash.webp"
   [params.landingImageCredit]
     name = "Levart_Photographer"
     profile = "https://unsplash.com/@siva_photography"

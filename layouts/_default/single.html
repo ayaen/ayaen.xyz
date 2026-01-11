@@ -1,5 +1,59 @@
-{{- define "main" }} {{ with .Params.ambientImage }}
-<div class="ambient-image" style="background-image: url('{{ . }}');"></div>
+{{- define "main" -}} {{ with .Params.ambientImage }}
+<script>
+    (function () {
+        const img = new Image();
+        img.src = "{{ . | absURL }}";
+
+        if (img.decode) {
+            img.decode()
+                .then(() => {
+                    document.documentElement.classList.add("ambient-ready");
+                })
+                .catch(() => {});
+        } else {
+            img.onload = function () {
+                document.documentElement.classList.add("ambient-ready");
+            };
+        }
+    })();
+</script>
+<style>
+    html[data-theme="dark"] body::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 60vw;
+        height: 100vh;
+
+        background-image: url("{{ . | absURL }}");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top right;
+
+        opacity: 0.45;
+
+        -webkit-mask-image: linear-gradient(
+            to left,
+            rgba(0, 0, 0, 1) 0%,
+            rgba(0, 0, 0, 1) 25%,
+            rgba(0, 0, 0, 0.6) 40%,
+            rgba(0, 0, 0, 0.15) 55%,
+            rgba(0, 0, 0, 0) 70%
+        );
+        mask-image: linear-gradient(
+            to left,
+            rgba(0, 0, 0, 1) 0%,
+            rgba(0, 0, 0, 1) 25%,
+            rgba(0, 0, 0, 0.6) 40%,
+            rgba(0, 0, 0, 0.15) 55%,
+            rgba(0, 0, 0, 0) 70%
+        );
+
+        pointer-events: none;
+        z-index: 0;
+    }
+</style>
 {{ end }}
 
 <article class="post-single">

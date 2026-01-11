@@ -1,7 +1,7 @@
 ---
 title: "Why Many OTT Shows Are Designed For Background Viewing"  
 date: 2026-01-10
-ambientImage: "/images/ajeet-mestry-UBhpOIHnazM-unsplash.jpg"
+ambientImage: "/images/ajeet-mestry-UBhpOIHnazM-unsplash.webp"
 summary: "Watching a show while washing dishes or preparing a meal is not unheard of"
 imageCredit:
   name: "Ajeet Mestry"
