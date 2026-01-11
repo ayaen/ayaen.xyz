@@ -6,7 +6,7 @@ enableRobotsTXT = true
 
 [params]
   env = "development"
-  description = "Writing on media, storytelling, and how OTT platforms shape viewing habits."
+  description = "Writing as meandering as the mind that thought up apples in pastry"
   [params.label]
     text = "Apfelstrudel"
     fancy = "<span class='apfel-a'>A</span>pfelstrudel"
@@ -24,7 +24,7 @@ enableRobotsTXT = true
 
   [params.homeInfoParams]
     Title = "Writing"
-    Content = "Essays on media, storytelling, and how digital platforms shape viewing habits."
+    Content = "Writing as meandering as the mind that thought up apples in pastry"
 
 [outputs]
   home = ["HTML"]

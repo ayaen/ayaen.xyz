@@ -301,9 +301,9 @@ body[data-theme="dark"] {
 /* =========================================================
    Ambient margin image (editorial, non-intrusive)
    ========================================================= */
-
 /* Ambient article image – viewport anchored */
-html[data-theme="dark"] body::before {
+
+html[data-theme="dark"] body.list::before {
     content: "";
     position: fixed;
     top: 0;
@@ -311,19 +311,52 @@ html[data-theme="dark"] body::before {
     width: 60vw;
     height: 100vh;
 
-    background-image: url("/images/ajeet-mestry-UBhpOIHnazM-unsplash.jpg");
+    background-image: url("/images/levart_photographer-WUd8XKFIotY-unsplash.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top right;
 
-    /* brighter image, controlled by mask instead of opacity */
-    opacity: 0.45;
+    opacity: 0.35;
 
-    /* aggressive fade towards text */
     -webkit-mask-image: linear-gradient(
         to left,
         rgba(0, 0, 0, 1) 0%,
-        rgba(0, 0, 0, 1) 26%,
+        rgba(0, 0, 0, 1) 22%,
+        rgba(0, 0, 0, 0.5) 38%,
+        rgba(0, 0, 0, 0.15) 52%,
+        rgba(0, 0, 0, 0) 70%
+    );
+    mask-image: linear-gradient(
+        to left,
+        rgba(0, 0, 0, 1) 0%,
+        rgba(0, 0, 0, 1) 22%,
+        rgba(0, 0, 0, 0.5) 38%,
+        rgba(0, 0, 0, 0.15) 52%,
+        rgba(0, 0, 0, 0) 70%
+    );
+
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* Article ambient image (single pages only) */
+.ambient-image {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 60vw;
+    height: 100vh;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top right;
+
+    opacity: 0.45;
+
+    -webkit-mask-image: linear-gradient(
+        to left,
+        rgba(0, 0, 0, 1) 0%,
+        rgba(0, 0, 0, 1) 25%,
         rgba(0, 0, 0, 0.6) 40%,
         rgba(0, 0, 0, 0.15) 55%,
         rgba(0, 0, 0, 0) 70%
@@ -339,6 +372,11 @@ html[data-theme="dark"] body::before {
 
     pointer-events: none;
     z-index: 0;
+}
+
+.post-single {
+    position: relative;
+    z-index: 1;
 }
 
 /* Let ambient image bleed through article */
