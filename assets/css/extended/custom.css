@@ -477,3 +477,47 @@ html[data-theme="dark"] body::before {
 html[data-theme="dark"].ambient-ready body::before {
     opacity: 0.45;
 }
+
+/* Few tweaks for About page */
+.no-dropcap p::first-letter {
+    all: unset !important;
+}
+
+.about-divider {
+    width: 3rem;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.25);
+    margin: 2.5rem 0;
+}
+
+.author-card a {
+    text-decoration-line: underline;
+    text-decoration-color: rgba(170, 170, 170, 0.45);
+    text-underline-offset: 2px;
+}
+
+.author-contact a {
+    text-decoration: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.35);
+    padding-bottom: 2px;
+}
+
+.author-contact a:hover {
+    border-bottom-color: rgba(255, 255, 255, 0.7);
+}
+
+.no-dropcap .post-content h2 {
+    margin-bottom: 0.5em;
+}
+
+html[data-theme="dark"] body::before {
+    background-image: var(--ambient-image);
+}
+
+.page-about h2 {
+    margin-top: 3rem;
+}
+
+.page-about author-card {
+    margin-top: 1.5rem;
+}
