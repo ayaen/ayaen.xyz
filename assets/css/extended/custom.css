@@ -261,9 +261,9 @@ a .apfel-a {
 /* =========================================================
    FINAL Dark Mode Override — PaperMod-safe
    ========================================================= */
-html[data-theme="light"] {
+/*html[data-theme="light"] {
     display: none !important;
-}
+}*/
 body.dark,
 body[data-theme="dark"] {
     --theme: #0d0e10;
